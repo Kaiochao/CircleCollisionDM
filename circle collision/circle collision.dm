@@ -1,5 +1,3 @@
-var obj/circle:a
-var obj/circle:b
 var restitution = 1
 
 world
