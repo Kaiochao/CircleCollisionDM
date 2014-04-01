@@ -13,10 +13,10 @@ vector
 	proc/Subtract(vector:V)
 		return new type (x - V.x, y - V.y)
 
-	proc/Multiply(S as num)
+	proc/Multiply(S)
 		return new type (S * x, S * y)
 
-	proc/Divide(S as num)
+	proc/Divide(S)
 		return new type (x / S, y / S)
 
 	proc/Dot(vector:V)
@@ -37,7 +37,7 @@ point
 
 	New(X, Y)
 		if(istype(X, /vector))
-			var vector/V = X
+			var vector:V = X
 			Y = V.y
 			X = V.x
 		..(X, Y)
